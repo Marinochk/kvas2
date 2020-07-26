@@ -252,13 +252,12 @@ h2 {
 .reference dd {
     margin: 20px 0 50px;
     position: relative;
-    display: block;
 }
 .reference dd img {
     border-radius: 5px;
     position: absolute;
     right: 150px;
-    top: 10px;
+    top: 8px;
 }
 .reference p {
     opacity: 0.8;
@@ -284,7 +283,56 @@ h2 {
 
 .reviews {
     background-color: rgba(228, 213, 192, 0.658);
+    position: relative;
+    padding-bottom: 80px;
 }
+.reviews blockquote {
+    width: 800px;
+}
+.reviews .img {
+    width: 700px;
+    font-size: inherit;
+    line-height: 1.8;
+    opacity: 0.8;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.reviews .img::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    background: url("img/quotes.png") no-repeat;
+    left: 7%;
+}
+.reviews .paper {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    font-size: 18px;
+    position: relative;
+}
+.reviews .btn {
+    position: absolute;
+    text-transform: uppercase;
+    border: 1px solid gray;
+    padding: 15px 15px;
+    font-weight: bold;
+    color: rgba(163, 162, 162, 0.685);
+    bottom: 60px;
+}
+.reviews .btn:hover {
+color: white;
+background-color: rgb(102, 95, 95);
+border-color:   rgb(102, 95, 95);
+}
+.reviews .btn:active {
+    color: white;
+    background-color: rgb(102, 95, 95);
+    border-color:   rgb(102, 95, 95);
+    opacity: 0.3;
+    }
 
 
 /*range*/
