@@ -22,6 +22,7 @@ h2 {
 .container {
     width: 1020px;
     margin: 0 auto;
+    padding: 0 20px 130px;
 }
 
 /*page-header*/
@@ -93,9 +94,6 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-.new {
-    padding-bottom: 130px;
 }
 .catalog-item {
     border: 1px solid #c3c3c3;
@@ -169,8 +167,9 @@ h2 {
     padding: 5px;
     text-align: justify;
 }
+/* уменьшила с 30 до 25, не придумала как можно убрать перенос */
 .catalog-btns b {
-    margin-left: 30px;
+    margin-left: 25px;
 }
 .catalog-btns {
     display: flex;
@@ -234,9 +233,7 @@ h2 {
 
 /*reference*/
 
-.reference {
-    padding-bottom: 20px;
-}
+
 .reference-title {
     font-size: 20px;
     font-weight: bold;
@@ -284,7 +281,6 @@ h2 {
 .reviews {
     background-color: rgba(228, 213, 192, 0.658);
     position: relative;
-    padding-bottom: 80px;
 }
 .reviews blockquote {
     width: 800px;
@@ -320,7 +316,7 @@ h2 {
     padding: 15px 15px;
     font-weight: bold;
     color: rgba(163, 162, 162, 0.685);
-    bottom: 60px;
+    bottom: 110px;
 }
 .reviews .btn:hover {
 color: white;
@@ -337,34 +333,52 @@ border-color:   rgb(102, 95, 95);
 
 /*range*/
 
-.range h2 {
+.range {
     text-transform: uppercase;
-    text-align: left;
-    padding: 40px 0px;
 }
 .price-list {
     width: 100%;
 }
-.price-list th {
+.price-list tr th {
     font-size: 10px;
     color: gray;
-}
-.price-list td {
-    font-size: 14px;
+    opacity: 0.8;
 }
 .price-list th, 
 .price-list td {
-    text-transform: uppercase;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.281);
     text-align: left;
-    padding: 5px;
-    margin: 10px;
+    padding: 20px 0;
 }
 .price-list td:first-child {
     font-weight: bold;
 }
-.price-list td:last-child {
+.price-list th:last-child, 
+.price-list td:last-of-type {
     text-align: right;
+}
+/* .price-list .new-beer {
+    position: relative;
+} */
+.price-list .new-beer::after {
+    content: 'НОВИНКА';
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    font-size: 8px;
+    position: relative;
+    left: 15px;
+    top: -5px;
+    padding: 2px;
+
+}
+
+
+
+/*order*/
+
+.order {
+    background-color: rgba(255, 164, 44, 0.603);
 }
 
 
