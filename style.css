@@ -127,7 +127,7 @@ h2 {
 .catalog-item .buy:hover {
     color: #fff;
     background-color: rgb(102, 48, 27);
-    border-color: rgb(150, 51, 12);
+    border-color: rgb(102, 48, 27);
 }
 .catalog-item .buy:active {
     opacity: 0.9;
@@ -319,9 +319,9 @@ h2 {
     bottom: 110px;
 }
 .reviews .btn:hover {
-color: white;
-background-color: rgb(102, 95, 95);
-border-color:   rgb(102, 95, 95);
+    color: white;
+    background-color: rgb(102, 95, 95);
+    border-color:   rgb(102, 95, 95);
 }
 .reviews .btn:active {
     color: white;
@@ -357,10 +357,7 @@ border-color:   rgb(102, 95, 95);
 .price-list td:last-of-type {
     text-align: right;
 }
-/* .price-list .new-beer {
-    position: relative;
-} */
-.price-list .new-beer::after {
+.new-beer::after {
     content: 'НОВИНКА';
     color: #fff;
     background-color: #000;
@@ -370,9 +367,8 @@ border-color:   rgb(102, 95, 95);
     left: 15px;
     top: -5px;
     padding: 2px;
-
 }
-
+/* почему между 369 и 370 строками красный треугольник? и под 373 строкой*/
 
 
 /*order*/
@@ -380,6 +376,67 @@ border-color:   rgb(102, 95, 95);
 .order {
     background-color: rgba(255, 164, 44, 0.603);
 }
+.text-holder {
+    width: 650px;
+}
+.order p {
+    opacity: 0.8;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 20px;
+    padding: 15px;
+    background-color: rgba(161, 129, 87, 0.239);
+    border-width: 0px;
+    font-family: inherit;
+    font-size: 14px;
+}
+input:hover, textarea:hover, select:hover {
+    background-color: rgba(161, 129, 87, 0.726);
+}
+input:focus, textarea:focus, select:focus {
+    background-color: #fff;
+}
+.volume-form option {
+    opacity: 0.8;
+}
+label {
+    text-transform: uppercase;
+}
+.textarea textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 150px;
+    max-height: 500px;
+}
+.checkbox {
+    position: relative;
+    left: 0;
+}
+.order .btn {
+    text-transform: uppercase;
+    border: 1px solid rgba(102, 48, 27, 0.8);
+    padding: 15px 15px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(102, 48, 27, 0.8);
+    bottom: 110px;
+}
+.order .btn:hover {
+    color: white;
+    background-color: rgb(102, 48, 27);
+    border-color:   rgb(102, 48, 27);
+}
+/* при нажатии на кнопку появляется белая и голубая рамка */
+.order .btn:active {
+    color: white;
+    background-color: rgb(102, 48, 27);
+    border-color:   rgb(102, 48, 27);
+    opacity: 0.3;
+    } 
 
 
 /*page-footer*/
