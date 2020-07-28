@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="квас, вахтер, романтик, заказать квас, квас от 5 баррелей, заказать квас онлайн">
+    <meta name="description" content="Варим сами, экспериментируем и творим, что хотим. Не заработка ради, а импортозамещения для. 
+    Поднимаем производство. Человек это то, что он ест и пьёт. У нас только качественные ингредиенты. 
+    Закажи лучший квас у нас! При заказе от 100 баррелей скидка на 10й заказ -1%">
     <title>Кваст</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="page-header">
         <div class="container">
@@ -21,12 +26,11 @@
                 </ul>
             </div>
             <div class="promo">
-            <a href="#">Крафтовый квас<br> всему голова!</a>
+                <a href="#">Крафтовый квас<br> всему голова!</a>
             </div>
         </div>
     </div>
 
-<!-- + -->
     <div class="new" id="history">
         <div class="container">
             <h2>Новинки</h2>
@@ -50,10 +54,8 @@
                         <a href="#" class="btn">Подробнее</a> 
                         <a href="#" class="btn buy">Купить</a>
                         <b>150 P.</b>   
-                    </div>
-                    
+                    </div> 
                 </div>
-
                 <div class="catalog-item">
                     <p class="title">Романтик</p>
                     <img src="img/bottle-right.jpg" alt="Романтик" width="319" height="459">
@@ -79,7 +81,6 @@
         </div>
     </div>
 
-    <!-- + -->
     <div class="features" id="production">
         <ul>
             <li class="feature-item feature1">
@@ -97,7 +98,6 @@
         </ul>
     </div>
 
-<!-- + -->
     <div class="reference">
         <div class="container">
         <h2>Немного истории</h2>
@@ -108,7 +108,9 @@
             </dt>
             <dd>
                 <img src="img/wiki-1.png" alt="Происхождение кваса">
-                <p>Квас на Руси появился в X-XI веке. Само слово "квас" тоже имеет друвнерусское происхождение. Помимо России квас готовят в Белоруссии, Сербии, Македонии, Словакии и многих других странах, но называется он везде одинаково - квас.</p>
+                <p>Квас на Руси появился в X-XI веке. Само слово "квас" тоже имеет друвнерусское происхождение. 
+                    Помимо России квас готовят в Белоруссии, Сербии, Македонии, Словакии и многих других странах, 
+                    но называется он везде одинаково - квас.</p>
             </dd>
             
             <dt class="reference-title">
@@ -117,19 +119,20 @@
             </dt>
             <dd>
                 <img src="img/wiki-2.png" alt="Классификация кваса">
-                <p>По Российскому ГОСТу для промышленного изготовления - это напиток с объёмной долей этилового спирта не более 1,2%, изготовленный в результате незавершённого спиртового и молочнокислого брожения сусла.</p>
+                <p>По Российскому ГОСТу для промышленного изготовления - это напиток с объёмной долей этилового спирта 
+                    не более 1,2%, изготовленный в результате незавершённого спиртового и молочнокислого брожения сусла.</p>
             </dd>    
         </dl>
         </div>
     </div>
     
-<!-- + -->
     <div class="reviews">
         <div class="container">
         <h2>Пресса о нас</h2>
         <div class="reviews-lits">
             <blockquote>
-                <p class="img">Сегодня мы провели дегустацию чего-то действительно новенького - крафтового кваса. Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!</p>
+                <p class="img">Сегодня мы провели дегустацию чего-то действительно новенького - крафтового кваса. 
+                    Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!</p>
                 <p class="paper">Газета столичный стольник</p>
             </blockquote>
             <a class="btn">Читать далее</a>
@@ -137,7 +140,6 @@
         </div>
     </div>
 
-<!-- + -->
     <div class="range" id="range">
         <div class="container">
         <h2>Ассортимент</h2>
@@ -181,51 +183,52 @@
         </div>
     </div>
 
-
     <div class="order" id="order">
         <div class="container">
         <h2>Заказать</h2>
         <div class="text-holder">
-        <p>Не ждите пока нас отрекламируют, как Вятский квас и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей - скидка 10%.</p>
-        <form class="order-form" action="mail" method="POST">
-            <div class="name">
-                <label for="fullname">Представьтесь:</label>
-                <input type="text" name="fullname" id="fullname" required>
+            <p>Не ждите пока нас отрекламируют, как Вятский квас и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. 
+                При заказе от 10 баррелей - скидка 10%.</p>
+                <form class="order-form" action="mail" method="POST">
+                    <div class="name">
+                        <label for="fullname">Представьтесь:</label>
+                        <input type="text" name="fullname" id="fullname" required>
+                    </div>
+                    <div class="phone-number-form left-phone-form">
+                        <label for="phone">Номер телефона:</label>
+                        <input type="text" name="Phone Number" pattern="[0-9]{10}" id="phone"required>
+                    </div>
+                    <div class="extra-phone-number-form right-phone-form">
+                        <label for="extra-number">Дополнительный номер:</label>
+                        <input type="text" name="Extra Number" pattern="[0-9]{10}" id="extra-number">
+                    </div>
+                    <div class="email-form">
+                        <label for="email">EMAIL:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="volume-form">
+                        <label for="volume">Объём заказа</label>
+                        <select name="volume" id="volume">
+                            <option value="1">ОТ 5 ДО 10 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+                            <option value="2">ОТ 10 ДО 50 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+                            <option value="3">ОТ 50 ДО 100 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+                        </select>
+                    </div>
+                    <div class="textarea">
+                        <label for="text">Дополнительный комментарий:</label>
+                        <textarea id="text" name="text"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <label class="c-b">Я согласна получать квасную рассылку
+                        <input type="checkbox" name="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </form>
             </div>
-            <div class="phone-number-form">
-                <label for="phone">Номер телефона:</label>
-                <input type="tel" id="phone" name="number" required>
-            </div>
-            <div class="extra-phone-number-form">
-                <label for="extra-number">Дополнительный номер:</label>
-                <input type="tel" id="extra-number" name="extra-number" >
-            </div>
-            <div class="email-form">
-                <label for="email">EMAIL:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="volume-form">
-                <label for="volume">Объём заказа</label>
-                <select name="volume" id="volume">
-                    <option value="1">ОТ 5 ДО 10 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
-                    <option value="2">ОТ 10 ДО 50 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
-                    <option value="3">ОТ 50 ДО 100 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
-                </select>
-            </div>
-            <div class="textarea">
-                <label for="text">Дополнительный комментарий:</label>
-                <textarea id="text" name="text"></textarea>
-            </div>
-            <div class="checkbox">
-                <label for="checkbox">Я согласна получать квасную рассылку</label>
-                <input type="checkbox" id="checkbox" name="checkbox" >
-            </div>
-        </form>
-        </div>
         <button type="submit" class="btn">Отправить заказ</a>
-            <span class="checkmark"></span>
+        <span class="checkmark"></span>
     </div>
-
 
     <div class="page-footer">
         <div class="container">
@@ -233,12 +236,12 @@
                 <div class="footer-logo">
                     <img src="img/logo.png" alt="Кваст" width="140" height="76">
                 </div>
-                    <ul class="main-nav">
-                        <li><a href="#">История</a></li>
-                        <li><a href="#">Производство</a></li>
-                        <li><a href="#">Ассортимент</a></li>
-                        <li><a href="#">Где купить</a></li>
-                    </ul>
+                <ul class="main-nav">
+                    <li><a href="#history">История</a></li>
+                    <li><a href="#production">Производство</a></li>
+                    <li><a href="#range">Ассортимент</a></li>
+                    <li><a href="#order">Где купить</a></li>
+                </ul>
             </div>
             <div class="footer-bottom">
                 <div class="footer-social">
@@ -249,6 +252,9 @@
                 <div>
                     <p>При перепечатке материалов<br> 
                         ссылка на сайт обязательна!</p>
+                </div>
+                <div class="logo">
+                    <a class="social-btn btn-logo" href="#"></a>
                 </div>
                 <div class="icon">
                     <p>Разработчик HTML Academy</p>
