@@ -69,7 +69,7 @@ h2 {
     text-decoration: none;
 }
 .main-nav a:hover {
-    color: orange;
+    color: orange;    
 }
 .main-nav a:active {
     color: orange;
@@ -396,9 +396,13 @@ input, textarea, select {
 }
 input:hover, textarea:hover, select:hover {
     background-color: rgba(161, 129, 87, 0.726);
+    outline: 0;
+    outline-offset: 0;
 }
 input:focus, textarea:focus, select:focus {
     background-color: #fff;
+    outline: 0;
+    outline-offset: 0;
 }
 .volume-form option {
     opacity: 0.8;
@@ -411,11 +415,9 @@ label {
     resize: vertical;
     min-height: 150px;
     max-height: 500px;
+    font-family: inherit;
 }
-.checkbox {
-    position: relative;
-    left: 0;
-}
+
 .order .btn {
     text-transform: uppercase;
     border: 1px solid rgba(102, 48, 27, 0.8);
@@ -424,6 +426,7 @@ label {
     color: #fff;
     background-color: rgba(102, 48, 27, 0.8);
     bottom: 110px;
+    margin-top: 30px;
 }
 .order .btn:hover {
     color: white;
@@ -437,6 +440,23 @@ label {
     border-color:   rgb(102, 48, 27);
     opacity: 0.3;
     } 
+.checkbox {
+    position: relative;
+    display: block;
+    left: 0;
+}
+.checkbox label {
+    margin-left: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.checkbox input {
+    position: absolute;
+    width: auto;
+    left: 20px;
+    top: -8px;
+}
+
 
 
 /*page-footer*/
@@ -444,4 +464,60 @@ label {
 .page-footer {
     background-color: #000;
     padding: 0;
+}
+.page-footer p {
+    color: rgb(206, 206, 206);
+}
+.footer-top {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 80px;
+}
+.footer-logo {
+    width: 140px;
+    height: 76px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+}
+.icon {
+    position: relative;
+}
+.icon::before {
+    content: "";
+    position: absolute;
+    background: url("img/htmlacademy.png") no-repeat ;
+    padding: 18px 14px;
+    left: -40px;
+}
+.page-footer .container {
+    padding-bottom: 0px;
+}
+.footer-social {
+    font-size: 0;
+}
+.social-btn {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+.footer-social .btn-ig {
+    background: url(img/icon-insta.png) no-repeat rgba(128, 128, 128, 0.2);
+    background-position: 50%;
+}
+.footer-social .btn-fb {
+    background: url(img/icon-fb.png) no-repeat rgba(128, 128, 128, 0.2);
+    background-position: 50%;
+}
+.footer-social .btn-vk {
+    background: url(img/icon-vk.png) no-repeat rgba(128, 128, 128, 0.2);
+    background-position: 50%;
 }
