@@ -251,6 +251,33 @@ h2 {
     line-height: 1.8;
     opacity: 0.8;
 }
+.header-top .busket {
+    position: relative;
+}
+.header-top .busket::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    width: 30px;
+    height: 30px;
+    background: url(img/shopping-basket-solid.svg) white;
+    /* <i class="fas fa-shopping-basket"></i> https://fontawesome.com/ */
+    border-radius: 50%;
+}
+.header-top .hide {
+    position: relative;
+}
+.header-top .hide::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
 
 
 /*reference*/
