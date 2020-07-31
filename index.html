@@ -39,7 +39,7 @@
             <div class="new-items">
                 <div class="catalog-item">
                     <p class="title">Вахтёр</p>
-                    <img src="img/bottle-left.jpg" alt="Вахтёр" width="319" height="459">
+                    <img src="img/bottle-left.jpg" alt="Вахтёр">
                     <table class="catalog-table">
                         <caption>Ржаной хлеб, Вода, Солод, Соль</caption>
                         <tr>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="catalog-item">
                     <p class="title">Романтик</p>
-                    <img src="img/bottle-right.jpg" alt="Романтик" width="319" height="459">
+                    <img src="img/bottle-right.jpg" alt="Романтик">
                     <table class="catalog-table">
                         <caption>Ячменный хлеб, Вода, Солод, Апельсин</caption>
                         <tr>
@@ -84,20 +84,22 @@
     </div>
 
     <div class="features" id="production">
-        <ul>
-            <li class="feature-item feature1">
-                <h2 class="feature-title">Варим сами</h2>
-                <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
-            </li>
-            <li class="feature-item feature2">
-                <h2 class="feature-title">Своё, родное</h2>
-                <p>Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
-            </li>
-            <li class="feature-item feature3">
-                <h2 class="feature-title">Не экономим</h2>
-                <p>Человек это то, что он ест и пьёт. У нас только качественные ингредиенты.</p>
-            </li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li class="feature-item feature1">
+                    <h2 class="feature-title">Варим сами</h2>
+                    <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
+                </li>
+                <li class="feature-item feature2">
+                    <h2 class="feature-title">Своё, родное</h2>
+                    <p>Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
+                </li>
+                <li class="feature-item feature3">
+                    <h2 class="feature-title">Не экономим</h2>
+                    <p>Человек это то, что он ест и пьёт. У нас только качественные ингредиенты.</p>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="reference">
@@ -130,7 +132,8 @@
     
     <div class="reviews">
         <div class="container">
-        <h2>Пресса о нас</h2>
+            <div class="container2">
+                <h2>Пресса о нас</h2>
         <div class="reviews-lits">
             <blockquote>
                 <p class="img">Сегодня мы провели дегустацию чего-то действительно новенького - крафтового кваса. 
@@ -138,6 +141,8 @@
                 <p class="paper">Газета столичный стольник</p>
             </blockquote>
             <a class="btn">Читать далее</a>
+            </div>
+        
         </div>
         </div>
     </div>
@@ -168,14 +173,16 @@
                 <td>250 Р.</td>
             </tr>
             <tr>
-                <td class="new-beer">вахтёр</td>
+                <td class="new-beer">вахтёр<a href="#history" class="new-link" 
+                    alt="Очень вкусное пиво - Вахтёр. Уталит жажду и довабит 
+                    настроения. Рекомендасьйон от Анны Палны.">новинка</a></td>
                 <td>&lt 1%</td>
                 <td>35</td>
                 <td>0,5 Л</td>
                 <td>150 Р.</td>
             </tr>
             <tr>
-                <td class="new-beer">романтик</td>
+                <td class="new-beer">романтик<a href="#history" class="new-link">новинка</a></td>
                 <td>&lt 0,5%</td>
                 <td>27</td>
                 <td>0,5 Л</td>
@@ -191,7 +198,7 @@
         <div class="text-holder">
             <p>Не ждите пока нас отрекламируют, как Вятский квас и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. 
                 При заказе от 10 баррелей - скидка 10%.</p>
-                <form class="order-form" action="mail" method="POST">
+                <form class="order-form" action="mail" method="GET">
                     <div class="name">
                         <label for="fullname">Представьтесь:</label>
                         <input type="text" name="fullname" id="fullname" required>
@@ -264,6 +271,7 @@
             </div>
         </div>
     </div>
+    </div>    
 </body>
 <script src="script.js"></script>
 

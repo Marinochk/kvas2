@@ -1,13 +1,4 @@
-/* 
-position, display (justify-content, align-text, flex-direction)
-margin, padding
-width, height
 
-font-size, font-weight, font-family, line-height, 
-text-transform, text-decoration
-
-color, background
-*/
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +25,7 @@ h2 {
 }
 .container {
     margin: 0 auto;
-    padding: 0 20px 130px;
+    padding: 0 20px;
     width: 1020px;
 }
 
@@ -42,7 +33,6 @@ h2 {
 
 .page-header {
     padding: 0;
-    padding-top: 35px;
     width: auto;
     min-height: 690px;
 
@@ -59,8 +49,7 @@ h2 {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    padding-top: 80px;
-    margin-bottom: 125px;
+    padding: 80px 0 125px;
 }
 .main-nav {
     display: flex;
@@ -111,6 +100,9 @@ h2 {
 }
 .catalog-item {
     position: relative;
+    padding: 0 10px;
+    width: 100%;
+    margin-bottom: 80px;
 
     border: 1px solid #c3c3c3;
     border-top: none;
@@ -125,6 +117,7 @@ h2 {
     text-decoration: none;
     border: 2px solid rgb(185, 86, 86);
     text-transform: uppercase;
+    cursor: pointer;
 }
 .catalog-item a:hover {
     color: brown;
@@ -149,17 +142,18 @@ h2 {
     opacity: 0.9;
 } 
 .catalog-item .title {
-    padding:10px;
-    padding-top: 5px;
+    padding: 0 10px;
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
 }
 .catalog-item img {
-    margin-left: 50px;
+    text-align: center;
+    width: 100%;
+    height: auto;
 }
 .catalog-item p {
-    margin: 20px 30px 60px 30px;
+    margin: 20px 0 30px;
     text-align: justify;
 
     font-size: 16px;
@@ -194,7 +188,6 @@ h2 {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 30px;
 }
 .catalog-btns .btn {
     margin-right: 6px;
@@ -205,6 +198,7 @@ h2 {
 
 .features {
     background-color: rgb(255, 204, 109);
+    width: 100%;
 }
 .features ul {
     display: flex; 
@@ -220,16 +214,15 @@ h2 {
 .features li {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     vertical-align: middle;
-    padding: 120px 90px 0;
-    margin: 15px;
+    padding: 120px 0 0;
+    margin-right: 15px;
 
     border-left: 2px solid #92653125;
 }
 .feature-title {
     padding: 0;
-    margin-bottom: 10px;
 
     font-size: 20px;
     line-height: 1;
@@ -237,13 +230,13 @@ h2 {
     color: #000;
 }
 .feature1 {
-    background: url("img/icon-brew.png") no-repeat 90px 0;
+    background: url("img/icon-brew.png") no-repeat 50% 0%;
 }
 .feature2 {
-    background: url("img/icon-matreshka.png") no-repeat 90px 0;
+    background: url("img/icon-matreshka.png") no-repeat 50% 0%;
 }
 .feature3 {
-    background: url("img/icon-thumbsup.png") no-repeat 90px 0;
+    background: url("img/icon-thumbsup.png") no-repeat 50% 0%;
 }
 .feature-item p {
     padding-top: 20px;
@@ -333,6 +326,9 @@ h2 {
 
     background-color: rgba(228, 213, 192, 0.658);
 }
+.container2 {
+    padding-bottom: 80px;
+} 
 .reviews blockquote {
     width: 800px;
 }
@@ -348,9 +344,9 @@ h2 {
 .reviews .img::before {
     content: '';
     position: absolute;
-    left: 7%;
-    width: 200px;
-    height: 400px;
+    left: 90px;
+    width: 50px;
+    height: 50px;
 
     background: url("img/quotes.png") no-repeat;
 }
@@ -364,9 +360,10 @@ h2 {
     font-size: 18px;
 }
 .reviews .btn {
-    position: absolute;
+    position: relative;
     padding: 15px 15px;
-    bottom: 110px;
+    bottom: 20px;
+    margin: 30px 0 80px;
 
     text-transform: uppercase;
     border: 1px solid gray;
@@ -393,6 +390,7 @@ h2 {
 }
 .price-list {
     width: 100%;
+    margin-bottom: 80px;
 }
 .price-list tr th {
     font-size: 10px;
@@ -413,18 +411,18 @@ h2 {
 .price-list td:last-of-type {
     text-align: right;
 }
-.new-beer::after {
-    content: 'НОВИНКА';
+.new-beer .new-link {
     position: relative;
+    
     left: 15px;
     top: -5px;
     padding: 2px;
 
+    text-decoration: none;
     color: #fff;
     background-color: #000;
     border-color: #000;
     font-size: 8px;
-
 }
 
 
@@ -486,8 +484,7 @@ input:focus, textarea:focus, select:focus {
 }
 .order .btn {
     padding: 15px 15px;
-    margin-top: 30px;
-    bottom: 110px;
+    margin: 30px 0 80px;
 
     text-transform: uppercase;
     border: 1px solid rgba(102, 48, 27, 0.8);
@@ -519,7 +516,6 @@ input:focus, textarea:focus, select:focus {
 }
 .checkbox label {
     position: relative;
-    margin-bottom: 20px;
 }
 .checkbox input {
     position: absolute;
