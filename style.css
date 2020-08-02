@@ -129,9 +129,13 @@ h2 {
     opacity: 0.5;
 }
 .catalog-item .buy {
+    padding: 20px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
     background-color: rgb(150, 51, 12);
     border-color: rgb(150, 51, 12);
     color: #fff;
+    cursor: pointer;
 }
 .catalog-item .buy:hover {
     color: #fff;
@@ -637,3 +641,210 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* the end */
+
+@media only screen and (max-width: 960px) {
+    h2 {
+        padding: 50px 0;
+        font-size: 32px;
+    }
+        /* header */
+    .page-header {
+        min-height: 400px;
+    }
+    .header-top {
+        padding: 60px 0px 60px;
+    }
+    .promo {
+        font-size: 60px;
+    }
+        /* new */
+    .container {
+        padding: 0 30px;
+    }
+    .catalog-item {
+        max-width: 460px;
+    }
+    .catalog-item .title {
+        font-size: 30px;
+    }
+    .catalog-item img {
+        width: auto;
+    }
+    .catalog-item a, .catalog-item .btn {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .catalog-table td {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .catalog-table caption {
+    font-size: 14px;
+    }
+    /* reviews */
+    .reviews .img::before {
+    left: 800px;
+    }
+    /* range */
+    .price-list {
+        max-width: 850px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .container {
+        max-width: 765px;
+    }
+    .main-nav a {
+        padding: 10px;
+    }
+    /* page header */
+    .page-header {
+        max-width: 760px;
+        min-height: 450px;
+    }
+    .page-header .header-top {
+        flex-wrap: wrap;
+    }
+    .page-header ul {
+        flex-wrap: wrap;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .promo {
+        line-height: 65px;
+    }
+    /* new */
+    .new {
+        max-width: 650px;
+    }
+    .new .container {
+        max-width: 650px;
+    }
+    .new-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .catalog-item {
+        max-width: 650px;
+        border: none;   
+    }
+    .catalog-item img {
+        margin-left: 85px;
+    }
+    .catalog-item .title {
+        text-align: center;
+        font-size: 28px;
+    }
+    .catalog-btns {
+        justify-content: center;
+        text-align: center;
+    }
+    .reference-box {
+        margin: 0 100px 30px;
+        width: 400px;
+        border-bottom: 2px solid #0a0a0a2f;
+    }
+        /* .reference .line::after {
+        content: "";
+        width: 400px;
+        border-bottom: 2px solid #0a0a0a2f;
+        height: 2px;
+        background-position: center;
+    } */
+    /* features */
+    .features {
+        max-width: 750px;
+    }
+    .features ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 750px;
+    }
+    .features li {
+        width: 600px;
+        padding-bottom: 20px;
+        border: none;
+        vertical-align: middle;
+        text-align: center;
+    }
+    /* reference */
+    .reference {
+        max-width: 750px;
+        vertical-align: middle;
+    }
+    .reference p {
+        width: 700px;
+    }
+    .reference dd img {
+        position: relative;
+        left: 260px;
+    }
+    .reference-title {
+        padding-bottom: 50px ; 
+        text-align: center;
+    }
+    .reference i {
+        right: 250px;
+        top: 30px;
+    }
+ 
+    /* reviews */
+    .reviews {
+        max-width: 750px;
+    }
+    .reviews .img::before {
+        background-image: none;
+    }
+    .reviews .paper {
+        text-align: center;
+    }
+     /* range */
+     .range {
+        max-width: 650px;
+    }
+     .price-list {
+        max-width: 768px;
+    }
+
+    /* order */
+    .order {
+        max-width: 760px;
+    }
+    .order .btn {
+        margin: 30px 250px 80px;
+    }
+    /* footer */
+    .page-footer {
+        max-width: 760px;
+    }
+    .footer-top {
+        max-width: 650px;
+    }
+    .page-footer ul {
+        flex-wrap: wrap;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bottom p {
+       font-size: 14px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    /* new */
+
+    /* features */
+    /* reference */
+    /* reviews */
+    /* range */
+    /* order */
+
+}
