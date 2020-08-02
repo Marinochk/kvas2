@@ -286,10 +286,16 @@ h2 {
 
 /*reference*/
 
+.reference .container {
+    max-width: 850px;
+}
 .reference-title {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .reference-source {
     color: #666666;
@@ -297,33 +303,32 @@ h2 {
     font-style: italic;
     font-weight: normal;
     text-transform: none;
+    
 }
 .reference dd {
-    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     margin: 20px 0 50px;
 }
 .reference dd img {
-    position: absolute;
-    right: 150px;
-    top: 8px;
+    display: block;
+    width: 200px;
+    height: auto;
 
     border-radius: 5px;
 }
 .reference p {
     text-align: justify;
-    width: 500px;
-
+    width: calc(100% - 250px);
+    max-width: 500px;
     opacity: 0.8;
     line-height: 1.8;
 }
 .reference dt {
     position: relative;
 }
-.reference i {
-    position: absolute;
-    right: 150px;
-    top: 0px;
-}
+
 .reference a {
     color: rgb(163, 100, 59);
     font-style: italic;
@@ -718,6 +723,10 @@ input:focus, textarea:focus, select:focus {
     /* .price-list {
         max-width: 850px;
     } */
+    /* reference */
+    .reference .container {
+        max-width: 100%;
+    }
 }
 @media only screen and (max-width: 768px) {
     h2 {
@@ -776,8 +785,9 @@ input:focus, textarea:focus, select:focus {
         text-align: center;
     }
     .reference-box {
-        margin: 0 100px 30px;
-        width: 400px;
+        margin: 0 auto 30px;
+        width: 100%;
+        max-width: 400px;
         border-bottom: 2px solid #0a0a0a2f;
     }
         /* .reference .line::after {
@@ -811,20 +821,30 @@ input:focus, textarea:focus, select:focus {
         vertical-align: middle;
     }
     .reference p {
-        width: 700px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+    }
+    .reference dd {
+        flex-direction: column-reverse;
     }
     .reference dd img {
-        position: relative;
-        left: 260px;
+        margin: 0 auto 20px;
     }
     .reference-title {
-        padding-bottom: 50px ; 
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+
         text-align: center;
+
     }
-    .reference i {
-        right: 250px;
-        top: 30px;
+    .reference-source {
+        margin-top: 5px;
+        font-size: 13px;
+        opacity: 0.3;
     }
+   
  
     /* reviews */
     /* .reviews {
