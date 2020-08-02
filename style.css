@@ -30,6 +30,7 @@ h2 {
     width: 100%;
 }
 
+
 /*page-header*/
 
 .page-header {
@@ -48,7 +49,6 @@ h2 {
 .header-top {
     display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     align-items: center;
     padding: 80px 0 125px;
@@ -58,9 +58,7 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    /* flex-wrap: wrap; */
     width: calc(100% - 250px);
-    padding: 20px;
 
     border-top: 1px solid rgba(250, 214, 214,0.5);
     border-bottom: 1px solid rgba(250, 214, 214,0.5);
@@ -70,6 +68,8 @@ h2 {
     list-style: none;
 }
 .main-nav a {
+    display: block;
+    padding: 20px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -100,7 +100,6 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
 }
 .catalog-item {
     position: relative;
@@ -196,7 +195,6 @@ h2 {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    /* flex-wrap: wrap; */
 }
 .catalog-btns .btn {
     margin-right: 6px;
@@ -214,7 +212,6 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    /* flex-wrap: wrap; */
     padding: 70px 0;
     list-style: none;
 }
@@ -227,7 +224,7 @@ h2 {
     text-align: center;
     vertical-align: middle;
     padding: 120px 10px 0;
-
+    align-self: stretch;
     border-left: 2px solid #92653125;
 }
 .feature-title {
@@ -300,8 +297,7 @@ h2 {
     font-size: 16px;
     font-style: italic;
     font-weight: normal;
-    text-transform: none;
-    
+    text-transform: none;    
 }
 .reference dd {
     display: flex;
@@ -313,7 +309,6 @@ h2 {
     display: block;
     width: 200px;
     height: auto;
-
     border-radius: 5px;
 }
 .reference p {
@@ -337,13 +332,11 @@ h2 {
 
 .reviews {
     position: relative;
-
     background-color: rgba(228, 213, 192, 0.658);
 }
 .container2 {
     padding-bottom: 80px;
 } 
-
 .reviews-list {
     position: relative;
 }
@@ -351,7 +344,6 @@ h2 {
     margin-bottom: 40px;
     text-align: justify;
     width: 700px;
-
     font-size: inherit;
     line-height: 1.8;
     opacity: 0.8;
@@ -362,13 +354,11 @@ h2 {
     left: -90px;
     width: 50px;
     height: 50px;
-
     background: url("img/quotes.png") no-repeat;
 }
 .reviews .paper {
     position: relative;
     text-align: right;
-
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
@@ -379,7 +369,6 @@ h2 {
     padding: 15px 15px;
     bottom: 20px;
     margin: 30px 0 80px;
-
     text-transform: uppercase;
     border: 1px solid gray;
     font-weight: bold;
@@ -416,7 +405,6 @@ h2 {
 .price-list td {
     padding: 20px 0;
     text-align: left;
-
     border-bottom: 2px solid rgba(128, 128, 128, 0.281);
 }
 .price-list td:first-child {
@@ -428,11 +416,9 @@ h2 {
 }
 .new-beer .new-link {
     position: relative;
-    
     left: 15px;
     top: -5px;
     padding: 2px;
-
     text-decoration: none;
     color: #fff;
     background-color: #000;
@@ -452,7 +438,6 @@ label {
 .order p {
     text-align: justify;
     margin-bottom: 50px;
-
     opacity: 0.8;
     line-height: 1.8;
 }
@@ -460,7 +445,6 @@ input, textarea, select {
     width: 100%;
     margin: 10px 0 20px;
     padding: 15px;
-
     background-color: rgba(161, 129, 87, 0.239);
     border-width: 0px;
     font-family: inherit;
@@ -482,13 +466,17 @@ input:focus, textarea:focus, select:focus {
 .text-holder {
     width: 650px;
 }
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .left-phone-form {
-    float: left;
-    width: 300px;
+    width: 46%;
 }
 .right-phone-form {
-    float: right;
-    width: 300px;
+    width: 46%;
 }
 .textarea textarea {
     width: 100%;
@@ -500,7 +488,6 @@ input:focus, textarea:focus, select:focus {
 .order .btn {
     padding: 15px 15px;
     margin: 30px 0 80px;
-
     text-transform: uppercase;
     border: 1px solid rgba(102, 48, 27, 0.8);
     font-weight: bold;
@@ -591,9 +578,9 @@ input:focus, textarea:focus, select:focus {
 
 .page-footer {
     padding: 0;
-
     background-color: #000;
 }
+
 .page-footer p {
     color: rgb(206, 206, 206);
 }
@@ -602,7 +589,6 @@ input:focus, textarea:focus, select:focus {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    /* flex-wrap: wrap; */
     padding-top: 80px;
     margin-bottom: 70px;
 }
@@ -681,9 +667,6 @@ input:focus, textarea:focus, select:focus {
     .container {
         padding: 0 30px;
     }
-    /* .catalog-item {
-        max-width: 460px;
-    } */
     .catalog-item .title {
         font-size: 30px;
     }
@@ -702,9 +685,6 @@ input:focus, textarea:focus, select:focus {
     font-size: 14px;
     }
     /* reviews */
-    /* .reviews .img::before {
-    left: 800px;
-    } */
     .reviews blockquote {
         max-width: 100%;
         padding-right: 70px;
@@ -718,12 +698,26 @@ input:focus, textarea:focus, select:focus {
         width: 100%;
     }
     /* range */
-    /* .price-list {
-        max-width: 850px;
-    } */
+
     /* reference */
     .reference .container {
         max-width: 100%;
+    }
+    /* footer */
+    .footer-top {
+        padding: 50px;
+        flex-wrap: wrap;
+    }
+    .footer-top .main-nav {
+        width: 100%;
+    }
+    .footer-logo {
+        width: 100%;
+        height: auto;
+    }
+    .footer-logo img {
+    display: block;
+    margin: 0 auto 30px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -734,9 +728,6 @@ input:focus, textarea:focus, select:focus {
     .container {
         max-width: 768px;
         width: 100%;
-    }
-    .main-nav a {
-        padding: 10px;
     }
     /* page header */
     .page-header {
@@ -756,16 +747,11 @@ input:focus, textarea:focus, select:focus {
         line-height: 65px;
     }
     /* new */
-    /* .new {
-        max-width: 650px;
-    }
-    .new .container {
-        max-width: 650px;
-    } */
     .new-items {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
     .catalog-item {
         max-width: 650px;
@@ -788,17 +774,7 @@ input:focus, textarea:focus, select:focus {
         max-width: 400px;
         border-bottom: 2px solid #0a0a0a2f;
     }
-        /* .reference .line::after {
-        content: "";
-        width: 400px;
-        border-bottom: 2px solid #0a0a0a2f;
-        height: 2px;
-        background-position: center;
-    } */
     /* features */
-    /* .features {
-        max-width: 750px;
-    } */
     .features ul {
         flex-wrap: wrap;
         flex-direction: column;
@@ -809,7 +785,6 @@ input:focus, textarea:focus, select:focus {
         width: 100%;
         max-width: 450px;
         margin: 0 auto 10px;
-
         padding-top: 100px;
         padding-bottom: 20px;
         border: none;
@@ -839,7 +814,6 @@ input:focus, textarea:focus, select:focus {
         flex-direction: column;
         align-items: center;
         padding-bottom: 0px;
-
         text-align: center;
 
     }
@@ -848,14 +822,7 @@ input:focus, textarea:focus, select:focus {
         font-size: 13px;
         opacity: 0.3;
     }
-   
- 
-    /* reviews */
-    /* .reviews {
-        max-width: 750px;
-    } */
     .reviews blockquote {
-        /* max-width: 100%; */
         padding: 0;
     }
     .reviews .img::before {
@@ -865,31 +832,14 @@ input:focus, textarea:focus, select:focus {
         text-align: right;
         padding-left: 180px;
     }
-     /* range */
-     /* .range {
-        max-width: 650px;
-    }
-     .price-list {
-        max-width: 768px;
-    } */
-
-    /* order */
-    /* .order {
-        max-width: 760px;
-    } */
     .order .btn {
         margin: 30px 250px 80px;
     }
-    /* footer */
-    /* .page-footer {
-        max-width: 760px;
+    .order .text-holder {
+        width: 100%;
     }
-    .footer-top {
-        max-width: 650px;
-    } */
     .page-footer ul {
         flex-wrap: wrap;
-        height: 100px;
         justify-content: center;
         align-items: center;
     }
@@ -900,7 +850,6 @@ input:focus, textarea:focus, select:focus {
 @media only screen and (max-width: 480px) {
     
     /* new */
-
     /* features */
     /* reference */
     /* reviews */
